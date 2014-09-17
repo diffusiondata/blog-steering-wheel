@@ -1,0 +1,10 @@
+# Microsoft Windows Visual Studio
+bin/
+obj/
+*.user
+*.suo
+
+# Apple OS X Xcode
+xcuserdata/
+*.xccheckout
+
