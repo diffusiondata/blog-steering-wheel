@@ -25,8 +25,8 @@ namespace F1Publisher.TopicSources
 {
     class ButtonStatesTopicSource : CarControlsTopicSource
     {
-        static private readonly string[] sortedButtonNames;
-        static private readonly IMRecord recordMetadata;
+        private static readonly string[] sortedButtonNames;
+        private static readonly IMRecord recordMetadata;
 
         static ButtonStatesTopicSource()
         {

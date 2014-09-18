@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace F1Publisher
 {
@@ -20,11 +16,6 @@ namespace F1Publisher
         {
             Frequency = frequency;
             SleepDuration = (uint)((double)sleepPerSecond / (double)frequency);
-        }
-
-        private uint SleepDurationFromFrequency(uint frequency)
-        {
-            return (uint)((double)sleepPerSecond / (double)Frequency);
         }
 
         private RefreshInterval? AdjustSleepDuration(int delta)

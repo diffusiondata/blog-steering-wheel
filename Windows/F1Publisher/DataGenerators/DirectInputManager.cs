@@ -17,7 +17,6 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using SlimDX.DirectInput;
 
 namespace F1Publisher.DataGenerators
@@ -28,7 +27,7 @@ namespace F1Publisher.DataGenerators
         {
             Driving,
             Joystick,
-        };
+        }
 
         // Events defined in ICarControlsDataGenerator
         public event EventHandler<CarButtonEventArgs> ButtonStateChanged;

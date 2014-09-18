@@ -52,13 +52,14 @@ namespace F1Publisher
         private readonly UInt64[] lastReportedValues = new UInt64[Enum.GetValues(typeof(Types)).Length];
         private readonly Stopwatch uptimeStopwatch = new Stopwatch();
         private readonly Stopwatch samplingStopwatch = new Stopwatch();
+        private readonly object locker = new object();
 
         private UInt64 CountOfUpdatesThisSecond;
         private UInt64 CountOfSuccessfulTopicSourceUpdatesThisSecond;
 
         public UInt64 GetValue(Types type)
         {
-            lock (this)
+            lock(locker)
             {
                 return values[(int)type];
             } 
@@ -79,7 +80,7 @@ namespace F1Publisher
         {
             var newValues = new UInt64[values.Length];
 
-            lock(this)
+            lock(locker)
             {
                 values[(int)Types.CountOfUpdates]++;
                 values[(int)Types.UpTimeInSeconds] = (UInt64)Math.Floor((double)uptimeStopwatch.ElapsedMilliseconds / 1000.0);
@@ -118,7 +119,7 @@ namespace F1Publisher
 
         private void Increment(Metrics.Types type)
         {
-            lock(this)
+            lock(locker)
             {
                 ++values[(int)type];
             }

@@ -16,7 +16,6 @@
  */
 #endregion
 
-using System;
 using PushTechnology.ClientInterface.Client.Content;
 using PushTechnology.ClientInterface.Client.Factories;
 using PushTechnology.ClientInterface.Client.Content.Metadata;
@@ -27,7 +26,7 @@ namespace F1Publisher.TopicSources
     {
         private const string frequencyFieldName = "Frequency";
         private const string sleepDurationFieldName = "SleepDuration";
-        static private readonly IMRecord recordMetadata;
+        private static readonly IMRecord recordMetadata;
 
         static RefreshIntervalTopicSource()
         {
