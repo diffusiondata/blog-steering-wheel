@@ -413,8 +413,7 @@
 				INFOPLIST_FILE = "F1Display/F1Display-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/qwillsion/Documents/code/diffusion-ios-5.0.1/Debug-universal",
-					"/Users/qwillsion/Documents/code/diffusion-ios-5.0.1/Release-universal",
+					"$(SRCROOT)/../../../diffusion-ios-5.0.1/Release-universal/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -431,8 +430,7 @@
 				INFOPLIST_FILE = "F1Display/F1Display-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/qwillsion/Documents/code/diffusion-ios-5.0.1/Debug-universal",
-					"/Users/qwillsion/Documents/code/diffusion-ios-5.0.1/Release-universal",
+					"$(SRCROOT)/../../../diffusion-ios-5.0.1/Release-universal/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
