@@ -6,6 +6,9 @@ It does this by using a steering wheel device, as used for gaming, as a source o
 data. As the driver interacts with the wheel, their actions are reflected in realtime by the display
 clients.
 
+For more information see the Push Technology blog post:
+[Creating a Dynamic Diffusion Demo using Real Time Gaming Hardware](http://www.pushtechnology.com/2014/09/18/creating-dynamic-diffusion-demo-real-time-gaming-hardware/) (18 September 2014)
+
 # Publisher
 
 Connects to the Diffusion server using the *Unified API*. It streams data about the car and the
