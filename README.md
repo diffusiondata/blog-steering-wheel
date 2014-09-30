@@ -9,10 +9,10 @@ clients.
 For more information see the Push Technology blog post:
 [Creating a Dynamic Diffusion Demo using Real Time Gaming Hardware](http://www.pushtechnology.com/2014/09/18/creating-dynamic-diffusion-demo-real-time-gaming-hardware/) (18 September 2014)
 
-# Publisher
+# Publishing client
 
 Connects to the Diffusion server using the *Unified API*. It streams data about the car and the
-driver's use of the steer wheel to topics on the server. To do this it uses the following features:
+driver's use of the steering wheel to topics on the server. To do this it uses the following features:
 
 - **TopicControl**: To create the topics to which we're going to publish.
 - **Topics**: To check whether the topics have already been created. It does this using the
@@ -29,7 +29,7 @@ Implemented in C# (.NET) for Microsoft Windows:
 - Requires a Joystick device (ideally Steering Wheel) supporting DirectInput (DirectX).
 - Runs as a console application.
 
-Windows was chosen as the implementation platform for the publisher due to its high level of support
+Windows was chosen as the implementation platform for the publishing client because of its high level of support
 for gaming devices. DirectInput wrapped with SlimDX provides easy, immediate access to Joystick events with
 minimal code.
 
@@ -66,7 +66,7 @@ You'll need:
 
 Get your Diffusion server up and running. The default configuration is fine as this enables support for clients using both the Classic and Unified APIs.
 
-## 2. Start the Publisher
+## 2. Start the publishing client
 
 On your Windows machine:
 
